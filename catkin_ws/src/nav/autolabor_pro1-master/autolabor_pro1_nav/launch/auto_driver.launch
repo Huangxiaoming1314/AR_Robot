@@ -1,0 +1,27 @@
+<!--xml version = "1.0"-->
+<launch>
+    <node name="joy" pkg="joy" type="joy_node" />
+
+    <node name = "teleop_twist_joy" pkg = "teleop_twist_joy" type = "teleop_node">
+        <!--enable-->
+        <param name = "enable_button" value = "4" type = "int" />
+        <!--enable turbo-->
+        <param name = "enable_turbo_button" value = "0" />
+        <param name = "scale_linear_turbo" value = "0.5" type = "double" />
+        <!--linear-->
+        <param name = "axis_linear" value = "1" type = "int" />
+        <param name = "scale_linear" value = "0.3" type = "double" />
+        <!--angular-->
+        <param name = "axis_angular" value = "0" type = "int" />
+        <param name = "scale_angular" value = "0.3" type = "double" />
+    </node>
+
+    <!--key twist-->
+    <node name="tele_key_twist" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen">
+        <param name="speed" value="0.2" />
+        <param name="turn" value="0.3" />
+    </node>
+    
+    <!--autolabor pro driver-->
+    <include file = "$(find autolabor_pro1_driver)/launch/driver.launch" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/hxm/catkin_ws/install
+
+Name: imu_publish
+Description: Description of imu_publish
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hxm/catkin_ws/install/lib 
+Requires: 

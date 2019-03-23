@@ -1,0 +1,166 @@
+<robot name="mrobot_description">
+
+
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00012805 0.067839 0.014988"
+        rpy="0 0 0" />
+      <mass
+        value="1.13" />
+      <inertia
+        ixx="0.011733"
+        ixy="-2.1139E-05"
+        ixz="-1.398E-05"
+        iyy="0.0064746"
+        iyz="-0.00058227"
+        izz="0.011226" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="30 144 255 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_footprint" />
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0.04" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child  link="base_link" />
+  </joint>
+
+  <link name="laser" type="fixed">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.034"/>
+      </geometry>
+      <color rgba="0.1 0.1 0.1 0.9"/>
+    </visual>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <origin xyz="0.07 0 0.055"/>
+    <parent link="base_link"/>
+    <child link="laser"/>
+  </joint>
+
+  <link name="right_Link">
+    <inertial>
+      <origin
+        xyz="-0.013424 -3.9066E-15 -1.3878E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.030933" />
+      <inertia
+        ixx="2.669E-05"
+        ixy="1.8775E-21"
+        ixz="1.1283E-21"
+        iyy="1.5083E-05"
+        iyz="-6.3527E-22"
+        izz="1.5083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/right_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/right_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_Link_joint" type="continuous">
+    <origin
+      xyz="-0.045 -0.083326 -0.01"
+      rpy="-1.4908 -1.713E-16 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_Link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link name="left_Link">
+    <inertial>
+      <origin
+        xyz="-0.013426 3.9309E-15 -1.3323E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.030933" />
+      <inertia
+        ixx="2.669E-05"
+        ixy="-7.4072E-21"
+        ixz="1.7487E-21"
+        iyy="1.5083E-05"
+        iyz="2.1176E-22"
+        izz="1.5083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/left_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mrobot_description/meshes/left_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_Link_joint" type="continuous">
+    <origin
+      xyz="-0.045 0.083324 -0.01"
+      rpy="1.4749 -6.1854E-16 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+
+</robot>

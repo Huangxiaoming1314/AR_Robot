@@ -1,0 +1,2 @@
+cartographer_ros/cartographer_ros:cartographer_ros/cartographer_ros_msgs:cartographer_ros/cartographer_rviz:rplidar_ros-master
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/hxm/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/hxm/catkin_ws/install_isolated

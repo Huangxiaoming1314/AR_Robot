@@ -1,0 +1,7 @@
+<launch>
+
+<node pkg="imu_publish" type="imu_data" name="JY901" >
+
+</node>
+
+</launch>

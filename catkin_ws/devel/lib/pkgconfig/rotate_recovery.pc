@@ -1,0 +1,8 @@
+prefix=/home/hxm/catkin_ws/devel
+
+Name: rotate_recovery
+Description: Description of rotate_recovery
+Version: 1.14.4
+Cflags: -I/home/hxm/catkin_ws/src/nav/navigation-kinetic-devel/rotate_recovery/include
+Libs: -L/home/hxm/catkin_ws/devel/lib -lrotate_recovery
+Requires: roscpp pluginlib
