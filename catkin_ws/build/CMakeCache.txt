@@ -1366,6 +1366,12 @@ cartographer_rviz_submaps_visualization_LIB_DEPENDS:STATIC=general;/usr/lib/x86_
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
+//Value Computed by CMake
+check_sensor_status_BINARY_DIR:STATIC=/home/hxm/catkin_ws/build/check_sensor_status
+
+//Value Computed by CMake
+check_sensor_status_SOURCE_DIR:STATIC=/home/hxm/catkin_ws/src/check_sensor_status
+
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
 
@@ -1835,6 +1841,9 @@ ros_arduino_firmware_SOURCE_DIR:STATIC=/home/hxm/catkin_ws/src/ros_arduino_bridg
 //Value Computed by CMake
 ros_arduino_msgs_BINARY_DIR:STATIC=/home/hxm/catkin_ws/build/ros_arduino_bridge/ros_arduino_msgs
 
+//The directory containing a CMake configuration file for ros_arduino_msgs.
+ros_arduino_msgs_DIR:PATH=/home/hxm/catkin_ws/devel/share/ros_arduino_msgs/cmake
+
 //Value Computed by CMake
 ros_arduino_msgs_SOURCE_DIR:STATIC=/home/hxm/catkin_ws/src/ros_arduino_bridge/ros_arduino_msgs
 
@@ -2205,7 +2214,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=60
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=61
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2987,7 +2996,7 @@ Q_WS_X11:INTERNAL=1
 SDL_IMAGE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SDL_IMAGE_LIBRARY
 SDL_IMAGE_LIBRARY-ADVANCED:INTERNAL=1
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
 YAMLCPP_CFLAGS:INTERNAL=
 YAMLCPP_CFLAGS_I:INTERNAL=
 YAMLCPP_CFLAGS_OTHER:INTERNAL=

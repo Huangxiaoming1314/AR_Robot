@@ -1,0 +1,8 @@
+<launch>
+  <arg name="androidLog_topic" />
+
+  <node name="check_sensor_status_node" pkg="check_sensor_status" type="check_sensor_status" output="screen">
+  
+  </node>
+
+</launch>
